@@ -1,4 +1,5 @@
 import pygame
+pygame.font.init()
 
 # Colors
 black = (0, 0, 0)
