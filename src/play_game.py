@@ -1,15 +1,21 @@
 import pygame
 import pygame.mixer
-from src.snake import Snake
-from src.food import Food
-from src.constants import *
+import os  # Import the os module
+from snake import Snake
+from food import Food
+from constants import *
 
 pygame.init()
 pygame.mixer.init()
 
-# Load sound files
-eat_sound = pygame.mixer.Sound('assets/eat.wav')
-game_over_sound = pygame.mixer.Sound('assets/game_over.wav')
+# Determine project root directory
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Load sound files using absolute paths
+eat_sound_path = os.path.join(PROJECT_ROOT, 'assets', 'eat.wav')
+game_over_sound_path = os.path.join(PROJECT_ROOT, 'assets', 'game_over.wav')
+eat_sound = pygame.mixer.Sound(eat_sound_path)
+game_over_sound = pygame.mixer.Sound(game_over_sound_path)
 
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("Snake Game")
@@ -81,7 +87,7 @@ def game_loop():
         elif game_state == 'PLAY':
             while game_close:
                 screen.fill(black)
-                game_over_message = font_style.render("You Lost! Press C-Play Again or Q-Quit", True, red)
+                game_over_message = font_style.render("You Lost! Press C-Continue Again or Q-Quit", True, red)
                 text_rect = game_over_message.get_rect(center=(screen_width / 2, screen_height / 2))
                 screen.blit(game_over_message, text_rect)
                 display_score(score)
