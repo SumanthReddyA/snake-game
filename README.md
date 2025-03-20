@@ -24,6 +24,13 @@ A simple Snake game built with Python and Pygame.
 2. **Ensure Assets Directory:**
    Make sure the `assets` directory is located in the project root (`snake-game/assets`). This directory contains the `eat.wav` and `game_over.wav` sound files, which are required for the game to run properly.
 
+## VS Code Configuration
+
+If you encounter issues with the "import pygame could not be resolved" error in VS Code, ensure that VS Code is using the correct Python interpreter for the project.
+
+1.  **Check Python Interpreter:** In VS Code, look at the bottom-right corner of the window. You should see the name of the selected Python interpreter.
+2.  **Select Correct Interpreter:** If the selected interpreter is not the one where Pygame is installed, click on it. A list of available Python interpreters will appear. Choose the interpreter where Pygame is installed (e.g., the one associated with your Miniconda environment).
+
 ## Dependencies
 
 - Pygame
