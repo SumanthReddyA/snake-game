@@ -14,6 +14,16 @@ A simple Snake game built with Python and Pygame.
   - Medium: Moderate snake speed, balanced gameplay.
   - Hard: Faster snake speed for experienced players.
 
+## Setup Instructions
+
+1. **Install Pygame:**
+   ```bash
+   pip install pygame
+   ```
+
+2. **Ensure Assets Directory:**
+   Make sure the `assets` directory is located in the project root (`snake-game/assets`). This directory contains the `eat.wav` and `game_over.wav` sound files, which are required for the game to run properly.
+
 ## Dependencies
 
 - Pygame
