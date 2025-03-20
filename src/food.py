@@ -1,6 +1,6 @@
 import pygame
 import random
-from src.constants import *
+from constants import *
 
 class Food:
     def __init__(self, screen, snake_block):

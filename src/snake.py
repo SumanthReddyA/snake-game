@@ -1,5 +1,5 @@
 import pygame
-from src.constants import *
+from constants import *
 
 class Snake:
     def __init__(self, screen, snake_block):
