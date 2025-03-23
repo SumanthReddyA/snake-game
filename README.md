@@ -37,7 +37,7 @@ If you encounter issues with the "import pygame could not be resolved" error in 
 
 ## Directory Structure
 
-
+```
 snake-game/
 ├── assets/              # For images, sounds, etc.
 ├── src/                  # Source code
@@ -50,7 +50,7 @@ snake-game/
 │   └── test_snake.py
 ├── requirements.txt       # Dependencies
 └── README.md             # Project documentation
-
+```
 ## Development Process
 
 This Snake game was developed using modern tools and techniques to enhance productivity and learning:
@@ -61,7 +61,7 @@ This Snake game was developed using modern tools and techniques to enhance produ
 ### Example Prompts
 Here are some of the prompts used during development:
 - **Initial Prompt**:  
-  
+  ```
   Help me define the scope of a Snake game project. The game should include:
   - A snake that grows when it eats food.
   - Food that appears randomly on the screen.
