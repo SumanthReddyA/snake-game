@@ -1,6 +1,6 @@
 # Snake Game
 
-A simple Snake game built with Python and Pygame.
+A simple Snake game built with Python and Pygame, leveraging modern tools like auto-code agents and LLMs to enhance productivity and learning.
 
 ## Features
 
@@ -50,3 +50,22 @@ snake-game/
 │   └── test_snake.py
 ├── requirements.txt       # Dependencies
 └── README.md             # Project documentation
+
+## Development Process
+
+This Snake game was developed using modern tools and techniques to enhance productivity and learning:
+- **Auto-Code Agents**: Used to generate boilerplate code and assist with repetitive tasks.
+- **LLM Models (Gemini 2.0 Flash)**: Leveraged for brainstorming, problem-solving, and generating initial prompts.
+- **Manual Development**: The final implementation, debugging, and customization were done manually to ensure the game meets all requirements.
+
+### Example Prompts
+Here are some of the prompts used during development:
+- **Initial Prompt**:  
+  ```plaintext
+  Help me define the scope of a Snake game project. The game should include:
+  - A snake that grows when it eats food.
+  - Food that appears randomly on the screen.
+  - Game over when the snake collides with itself or the wall.
+  - A score counter.
+  - Basic UI with a start and restart option.
+  - The game should be built using Python and a simple GUI library like Pygame.
